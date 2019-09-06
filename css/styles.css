@@ -61,7 +61,7 @@ nav ul {
  flex-direction: column;
  justify-content: space-around;
  align-items: center;
- padding-top: 1.5rem;
+ padding-top: 1rem;
 }
 
 nav ul li a {
@@ -69,14 +69,56 @@ nav ul li a {
 }
 
 
+
 @media screen and (min-width: 48rem) {
 
  nav {
-  height: 6rem;
+  height: 5rem;
  }
 
  nav ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
  }
+
+ nav ul li{
+  padding: 2.2rem 2rem;
+ }
+
+ nav ul li:hover,
+ nav ul li:active {
+  text-decoration: underline;
+  background-color: var(--rifle-green);
+ }
+}
+
+.app {
+ border: 3rem solid var(--raisin-black);
+ display: flex;
+ flex-direction: column;
+ width: 100vw;
+ height: 80vh;
+ justify-content: center;
+ align-items: center;
+}
+
+.timer-div {
+ display: flex;
+}
+
+.timer {
+ text-align: center;
+ width: 15rem;
+ padding: 1.5rem;
+ background-color:var(--carmine-pink);
+ border-radius: 8rem;
+}
+
+button {
+ text-align: center;
+ width: 15rem;
+ padding: 1.5rem;
+ background: (--carmine-pink);
+ border-radius: 8rem;
 }
