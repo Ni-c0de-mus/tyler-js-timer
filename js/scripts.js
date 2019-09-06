@@ -1,4 +1,3 @@
-
 let timer = setInterval(TimerHandler, 1000);
 
 let sec = 0;
@@ -9,17 +8,17 @@ let start_btn = document.getElementById("start");
 let stop_btn = document.getElementById("stop");
 let reset_btn = document.getElementById("reset");
 
-start_btn.addEventListener("click", function () {
+start_btn.addEventListener("click", function() {
   timer = setInterval(TimerHandler, 1000);
   reset_btn.disabled = true;
 });
 
-stop_btn.addEventListener("click", function () {
+stop_btn.addEventListener("click", function() {
   timer = clearInterval(timer);
   reset_btn.disabled = false;
 });
 
-reset_btn.addEventListener("click", function () {
+reset_btn.addEventListener("click", function() {
   timer = clearInterval(timer);
   reset_btn.disabled = true;
   sec = 0;
