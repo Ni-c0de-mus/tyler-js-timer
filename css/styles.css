@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster|Audiowide|Great+Vibes|Comfortaa|Orbitron|Tajawal|Livvic|Fira+Sans|Unica+One|Rajdhani");
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --old-gold: #B8B42D;
+ --olivine: #9DAD6F;
+ --charlston-green: #2A2B2A;
+ --metal-sunburn: #A37C40;
+ --vivid-tangerine: #FFA987;
+ --linen: #F7EBE8;
+ --carmine-pink: #E54B4B;
+ --raisin-black: #1E1E24;
+ --rifle-green: #444140;
+ --rich-black: #07090F;
+ --great-vibes: 'Great Vibes', cursive;
+ --comfortaa: 'Comfortaa', cursive;
+ --orbitron: 'Orbitron', sans-serif;
+ --audiowide: 'Audiowide', cursive;
+ --rajdhani: 'Rajdhani', sans-serif;
+}
+
+
+html {
+ font-size: 10px;
+ color: var(--linen);
+ font-family: var(--rajdhani);
+}
+
+a {
+ text-decoration: none;
+}
+
+.container {
+ width: 100vw;
+ height: 80vh;
+ font-size: 2rem;
+ background-color: var(--rifle-green);
+}
+
+nav {
+ height: 80vh;
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ background-color: var(--raisin-black);
+ color: (--linen);
+}
+
+nav ul {
+ height: 100%;
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ padding-top: 1.5rem;
+}
+
+nav ul li a {
+ color: var(--linen);
+}
+
+
+@media screen and (min-width: 48rem) {
+
+ nav {
+  height: 6rem;
+ }
+
+ nav ul {
+  display: flex;
+  flex-direction: row;
+ }
+}
